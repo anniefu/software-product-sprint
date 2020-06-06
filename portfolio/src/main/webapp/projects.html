@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Annie Fu: Projects</title>
+    <link rel="stylesheet" href="font-awesome-4.2.0/font-awesome-4.2.0/css/font-awesome.min.css">
+    <style type="text/css">
+
+
+        .header {
+            font-family: "Century Gothic", Helvetica, sans-serif;
+            font-size: 60px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: lightsteelblue;
+            width: 800px;
+        }
+
+        .nav {
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+            width: 800px;
+            border-color: lightsteelblue;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+
+        }
+
+        .nav0 {
+            display: inline-block;
+            padding: 1em;
+            text-decoration: none;
+            color: steelblue;
+
+            width: 150px;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Century Gothic", Helvetica, sans-serif;
+
+        }
+
+        .nav1 {
+            display: inline-block;
+            padding: 1em;
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Century Gothic", Helvetica, sans-serif;
+
+        }
+
+        .hover-shadow {
+            display: inline-block;
+            position: relative;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        }
+
+        .hover-shadow:before {
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 100%;
+            left: 5%;
+            height: 10px;
+            width: 90%;
+            opacity: 0;
+            background: radial-gradient(ellipse at center, steelblue 0%, rgba(0, 0, 0, 0) 80%);
+            /* W3C */
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform, opacity;
+            transition-property: transform, opacity;
+        }
+
+        .hover-shadow:hover, .hover-shadow:focus, .hover-shadow:active {
+            -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+            -webkit-animation-name: hover;
+            animation-name: hover;
+            -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+        }
+
+        .hover-shadow:hover:before, .hover-shadow:focus:before, .hover-shadow:active:before {
+            opacity: .4;
+            -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+            -webkit-animation-name: hover-shadow;
+            animation-name: hover-shadow;
+            -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+        }
+
+        .main {
+
+            width: 840px;
+            height: auto;
+            margin: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+        }
+
+        .title {
+            font-family: "Century Gothic";
+            width: 450px;
+            float: right;
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            padding-bottom: 4px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: lightsteelblue;
+        }
+
+        .text {
+            font-family: "Century Gothic";
+            width: 450px;
+            float: right;
+            color: black;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .body1 {
+            height: auto;
+            border-bottom-style: solid;
+            border-bottom-color: lightsteelblue;
+            border-bottom-width: 2px;
+            min-width: 840px;
+            overflow: hidden;
+            padding-bottom: 45px;
+
+        }
+
+        .body2 {
+            height: auto;
+            padding-top: 45px;
+            border-bottom-style: solid;
+            border-bottom-color: lightsteelblue;
+            border-bottom-width: 2px;
+            padding-bottom: 45px;
+            overflow: hidden;
+
+        }
+
+        .body3 {
+            height: auto;
+            padding-top: 45px;
+            overflow: hidden;
+
+        }
+
+        .text2 {
+            float: left;
+            width: 450px;
+            font-family: "Century Gothic";
+            line-height: 1.5;
+        }
+
+        a:link {
+            text-decoration: none;
+
+        }
+
+        .sushi {
+            float: right;
+            width: 350px;
+            height: 300px;
+            position: relative;
+            top: 0px;
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+<div class="header">
+    Annie Fu
+</div>
+<div class="nav">
+    <a href="index.html" class="nav1 hover-shadow"> <i class="fa fa-home"></i>&nbsp; Home </a>
+    <a href="projects.html" class="nav0 hover-shadow"><i class="fa fa-tasks"></i>&nbsp; Projects</a>
+    <a href="resume.html" class="nav1 hover-shadow"><i class="fa fa-file-text"></i>&nbsp; Resume</a>
+    <a href="contact.html" class="nav1 hover-shadow"><i class="fa fa-paper-plane"></i>&nbsp; Contact</a>
+
+</div>
+
+<div class="main">
+    <div class="body1">
+        <a href="images/mpark.PNG" target="_blank"><img src="images/mpark.PNG" alt="MPark screenshot"
+                                                              style="border-radius: 10px; width:350px; float:left; margin-top: 20px;"></a>
+
+        <div class="title">2015 MPark (Web App)</div>
+        <div class="text" style="font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Description</div>
+        <div class="text"> Created during MHacks 6, a 36-hour hackathon at the University of Michigan, MPark is a web platform for renting parking spots. Drivers who need parking can search a location to find nearby parking spots for rent by owners. The screenshot shows a search for parking spots near "100 University Ave, Ann Arbor." <br>(Created with <a href="http://www.shivanidhruvshah.com" target="_blank">Shivani Shah</a>).
+        </div>
+        <div class="text" style="font-size: 20px;padding-top: 10px; padding-bottom: 10px;">Features</div>
+        <div class="text"><i class="fa fa-chevron-right"></i> &nbsp; Back-end integration with Parse's cloud database API
+            <br> <i class="fa fa-chevron-right"></i> &nbsp; Front-end integration Google Maps' Javascript API
+            <br> <i class="fa fa-chevron-right"></i> &nbsp; User interface built in HTML, CSS, and JQuery
+        </div>
+        <div class="text" style="font-size: 20px; padding-top: 10px; padding-bottom:10px;">Screenshot</div>
+        <div class="text"><i class="fa fa-chevron-right"></i> <a href="images/mpark.PNG" target="_blank">MPark </a></div>
+	</div>
+
+    <div class="body2">
+        <div class="sushi">
+            <img src="images/sushidrop1.PNG" alt="SushiDrop menu screen"
+                 style="border-radius: 10px;  width: 200px; float: right; position:relative; top:30px;">
+            <img src="images/sushidrop2.PNG" alt="SushiDrop gameplay"
+                 style="border-radius: 10px; width: 200px; position: relative; top: -10px;">
+        </div>
+
+        <div class="title" style="float: left">2012 SushiDrop (Java Game)</div>
+        <div class="text2" style="font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Description</div>
+        <div class="text2" style="line-height: 1.5;"> Created as a final project for AP Computer Science, SushiDrop is a
+            game written in Java featuring
+            a hamster that catches falling sushi while avoiding bottles of poison. The player uses the arrow keys to
+            control a hamster on the left side of the
+            window, while a computer player hamster competes on the right side.<br>(Created with <a
+                    href="http://www.rachelxiang.com" target="_blank">Rachel Xiang</a>).
+
+
+        </div>
+        <div class="text2" style="font-size: 20px;padding-top: 10px; padding-bottom: 10px;">Features</div>
+        <div class="text2"><i class="fa fa-chevron-right"></i> &nbsp; Randomly generated falling objects (sushi and
+            poison)
+            <br>
+            <i class="fa fa-chevron-right"></i> &nbsp; Automated computer player that reacts to falling objects and
+            includes three difficulty levels
+            <br>
+            <i class="fa fa-chevron-right"></i> &nbsp; Increasing difficulty from start to finish of a round
+            <br>
+            <i class="fa fa-chevron-right"></i> &nbsp; Collision detection
+            <br> <i class="fa fa-chevron-right"></i> &nbsp; Java GUI
+        </div>
+
+
+        <div class="text2" style="font-size: 20px; padding-top: 10px; padding-bottom:10px;">Downloads</div>
+        <div class="text2">
+            <i class="fa fa-chevron-right"></i> <a href="SushiDrop.exe">SushiDrop.exe</a><br>
+            <i class="fa fa-chevron-right"></i> <a href="SushiDrop.jar">SushiDrop.jar</a><br>
+            <i class="fa fa-chevron-right"></i> <a href="SushiDrop.zip">SushiDrop.zip (.exe & .jar included)</a>
+        </div>
+
+    </div>
+
+    <div class="body2">
+        <a href="2012WebComp/index.html" target="_blank"><img src="images/wicker%20basket.PNG" alt="2012 MCWT Website"
+                                                              style="border-radius: 10px; width:350px; float:left;"></a>
+
+        <div class="title">2012 MCWT Web Design Competition</div>
+        <div class="text" style="font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Description</div>
+        <div class="text">Built for the MCWT high school web design competition with the theme,
+            "How would you survive if your hot air balloon ride over Michigan's UP went astray?" More information can be
+            found
+            on the website. <br>(1st place finish with <a href="http://www.rachelxiang.com" target="_blank">Rachel
+                Xiang</a>).
+        </div>
+        <div class="text" style="font-size: 20px;padding-top: 10px; padding-bottom: 10px;">Features</div>
+        <div class="text"><i class="fa fa-chevron-right"></i> &nbsp; Interactive CSS navigation bar
+            <br> <i class="fa fa-chevron-right"></i> &nbsp; Interactive javascript slide show
+            <br> <i class="fa fa-chevron-right"></i> &nbsp; Compatible with Chrome, Firefox, and IE
+        </div>
+        <div class="text" style="font-size: 20px; padding-top: 10px; padding-bottom:10px;">Link</div>
+        <div class="text"><i class="fa fa-chevron-right"></i> <a href="2012WebComp/index.html" target="_blank">Wicker
+            Basket vs. Wild </a></div>
+    </div>
+
+
+    <div class="body3">
+        <a href="2011MCWT/Index.htm" target="_blank"><img src="images/genie.PNG" alt="2011 MCWT Website"
+                                                          style="width:350px; float:right; border-radius: 10px;"></a>
+
+        <div class="text2">
+            <div class="title">2011 MCWT Web Design Competition</div>
+            <div class="text" style="font-size: 20px; padding-top: 10px; padding-bottom: 10px;">Description</div>
+            <div class="text">Built for the MCWT high school web design competition with the theme,
+                "If you had a genie and three wishes, what would you do?" More information can be found
+                on the website. <br>(1st place finish with <a href="http://www.rachelxiang.com" target="_blank">Rachel
+                    Xiang</a>).
+            </div>
+            <div class="text" style="font-size: 20px;padding-top: 10px; padding-bottom: 10px;">Features</div>
+            <div class="text"><i class="fa fa-chevron-right"></i> &nbsp; Pure CSS navigation bar
+                <br> <i class="fa fa-chevron-right"></i> &nbsp; Javascript slide show header
+                <br> <i class="fa fa-chevron-right"></i> &nbsp; Compatible with Chrome, Firefox, and IE
+            </div>
+            <div class="text" style="font-size: 20px; padding-top: 10px; padding-bottom:10px;">Link</div>
+            <div class="text"><i class="fa fa-chevron-right"></i> <a href="2011MCWT/Index.htm" target="_blank">Three
+                Wishes, One World </a></div>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>CSS Menu</title>
+		<style type="text/css">
+			body {
+				margin:auto;
+				width:902px;
+			}
+			
+			#menu {
+				font-family: Century Gothic, sans-serif;
+				font-weight: bold;
+				margin-top: 100px;
+				padding: 0;
+				list-style-type: none;
+				background-color: #70298e;
+				font-size: 13px;
+				height: 40px;
+				border-top: 2px solid #70298e;
+				border-bottom: 2px solid #000000;
+			}
+			#menu li {
+				float: left;
+				margin: 0 px;				
+			}
+			#menu li a {
+				text-decoration: none;
+				display: block;
+				padding: 0 20px;
+				line-height: 40px;
+				color: #FFF;
+			}
+			#menu li a:hover, #menu li.active a {
+				background-color: #bb85d2;
+				border-bottom: 2px solid #000;
+				color: #FFF;
+			}
+			#menu_wrapper ul {margin-left: 12px;}
+			#menu_wrapper {padding: 0 16px 0 0; background: url(images/purple.png) no-repeat right;}
+			#menu_wrapper div {float: left; height: 44px; width: 12px; background: url(images/purple.png) no-repeat left;}
+			
+			
+		</style>
+	</head>
+	<body>
+	<div class ="img">
+		<img src="images/JASON.jpg" alt="Image: Color Pencils" />
+	</div>
+		<div id="menu_wrapper">
+		   <div class="left"></div> 
+			<ul id="menu">
+				<li class = active> <a href="#">HOME</a></li>
+				<li><a href="#">Hobbies</a></li>
+				<li><a href="#">School Life</a></li>
+				<li><a href="#">Credits</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

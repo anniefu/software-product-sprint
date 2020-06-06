@@ -1,0 +1,126 @@
+
+.header {
+	margin: 0;
+	height: 100px;
+	width: 100%;
+    min-width: 850px;
+	border-bottom: medium solid DarkTurquoise;
+}
+
+.header .search {
+    position: absolute;
+    display: inline-block;
+    width: 700px;
+    top: 25px;
+    margin-left: 50px;
+}
+
+.header div i {
+    top: 5px;
+    color: gray;
+    margin: 10px;
+}
+
+.header div i:hover {
+    color: DarkTurquoise;
+}
+
+.header .left {
+	position: relative;
+	top: 10px;
+	float: left;
+	margin: 10px;
+	color: DarkTurquoise;
+	font-family: verdana;
+	font-size: 40px;
+	font-weight: bold;
+}
+.header .right {
+	position: relative;
+	top: 15px;
+	margin-right: 20px;
+	float: right;
+}
+.header a {
+    text-decoration: none;
+    color: DarkTurquoise;
+}
+.header .right a {
+	font-family: verdana;
+	color: DarkTurquoise;
+	text-decoration: none;
+    font-size: 22px;
+}
+
+
+.main{
+	position: relative;
+	top: 200px;
+	text-align: center;
+	height: 100%;
+}
+
+.main #logo {
+    width: 800px;
+	margin: auto;
+	padding: 0;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 60px;
+	color: DarkTurquoise;
+}
+
+input[type="text"] {
+    font-weight: bold;
+	width: 450px;
+	padding: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+	border-radius: 10px;
+    border-color: DarkTurquoise;
+}
+
+.main i {
+    padding: 5px;
+    color: gray;
+    margin: auto;
+}
+
+.main p {
+    padding: 10px;
+    color: gray;
+    font-size: 20px;
+    width: 800px;
+    margin: auto;
+    font-family: verdana;
+}
+
+.main #spot_button {
+    position: relative;
+    padding: 5px;
+    top: 20px;
+    margin: auto;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    font-family: verdana;
+    font-size: 24px;
+    background-color: DarkTurquoise;
+}
+
+.main #spot_button a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+    background-color: white;
+    opacity: 0;
+}
+
+.main #spot_button:hover {
+    background-color: gray;
+}

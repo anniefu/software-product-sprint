@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false?key=AIzaSyADzlhCS-YZ-GgvzRInO4q_1RbOr9Iy7Mw&signed_in=true&callback=initMap"
+            defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="mparks.css"/>
+    <script type="text/javascript" src='parse-1.6.0.js'></script>
+    <script type="text/javascript" src="mpark.js" defer></script>
+    <script type="text/javascript" src="map.js"></script>
+    <title>MPark - Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        #map {
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <p class="left"><a href="index.html">MPark</a></p>
+
+    <p class="right">
+
+    </p>
+    <div class="search"><i class="fa fa-search fa-2x"></i><input type="text" name="user" placeholder="Street address (Ex: 1100 University Ave, Ann Arbor)" onkeypress="key_pressed(event)"></div>
+</div>
+
+<div id="map"></div>
+
+
+
+
+</body>
+</html>
