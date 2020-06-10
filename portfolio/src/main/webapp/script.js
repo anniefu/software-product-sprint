@@ -28,6 +28,12 @@ function addRandomGreeting() {
 }
 
 function addData() {
-    fetch("/data").then(response => response.text()).then(d =>
-    document.getElementById("greeting-container").innerHTML = d)
+    fetch("/data").then(response => response.json()).then(resp => {
+        console.log(resp);
+        var html;
+        for (i = 0; i < resp.length; i++) {
+            html += "<h1>" + resp[i] + "</h1>"
+        }
+        document.getElementById("greeting-container").innerHTML = html;
+    })
 }
