@@ -30,10 +30,10 @@ function addRandomGreeting() {
 function addData() {
     fetch("/data").then(response => response.json()).then(resp => {
         console.log(resp);
-        var html;
+        var html = "";
         for (i = 0; i < resp.length; i++) {
-            html += "<h1>" + resp[i] + "</h1>"
+            html += "<p>" + resp[i] + "</p>"
         }
-        document.getElementById("greeting-container").innerHTML = html;
+        document.getElementById("comments-container").innerHTML = html;
     })
 }
